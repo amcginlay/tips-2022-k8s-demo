@@ -1,5 +1,12 @@
 # tips-2022-k8s-demo
 
+Ever want to try out something in Kubernetes, but some of the following are on you mind? :
+- you can't be bothered to wait 20 minutes to stand up an EKS cluster.
+- you don't want your precious laptop turning into a big ball of mud.
+- you're tired of bouncing images off registries for no good reason.
+
+If so, read on ...
+
 ## Step 1 - Create your Cloud9 instance from CloudShell (us-west-2)
 
 Navigate to [https://us-west-2.console.aws.amazon.com/cloudshell/home](https://us-west-2.console.aws.amazon.com/cloudshell/home) then issue the following commands.
