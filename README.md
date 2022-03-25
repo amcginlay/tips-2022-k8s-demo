@@ -158,7 +158,7 @@ kubectl -n tips create deployment demo --image demo:1.0.0
 kubectl -n tips get pods
 ```
 
-## Step 8 - Forward service port for Cloud9 visibility
+## Step 8 - Forward deployment port for Cloud9 visibility
 
 ```bash
 kubectl -n tips port-forward deployment/demo 8080:80 # ctrl+c to stop
