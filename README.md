@@ -82,11 +82,8 @@ EOF
 ## Step 4 - Create PHP app
 
 ```bash
-wget https://raw.githubusercontent.com/amcginlay/k8s-primer/main/static/images/meet-kubernetes/kind-vs-eks.png \
-  -O ~/environment/image.png
-```
+wget https://raw.githubusercontent.com/amcginlay/tips-2022-k8s-demo/image.png
 
-```bash
 cat <<EOF >~/environment/index.php 
 <html>
 <head><title>TIPS 2022</title></head>
