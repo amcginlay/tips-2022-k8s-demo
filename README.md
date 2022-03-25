@@ -1,6 +1,4 @@
-# tips-2022-k8s-demo
-
-## The Kubernetes Superhighway :)
+# tips-2022-k8s-demo - "Kubernetes The Fast Way"
 
 Ever want to try out something in Kubernetes, but ...
 - you can't be bothered to wait 20 minutes to stand up an EKS cluster?
