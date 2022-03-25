@@ -125,9 +125,10 @@ docker stop ${container_id_one}
 
 ## Step 6 - Load app into KinD
 
-Kubernetes uses image registries in reaction to specific images being missing from 
+A Kubernetes node typically pulls images from registries in reaction to images being missing from its cache.
+With KinD we can circumvent the need for image registries by pre-loading the caches.
 
-Inspect the built image in Docker then load into KinD (no image registry required!)
+Inspect the built image in Docker then load into KinD.
 ```bash
 docker images demo:1.0.0
 kind load docker-image demo:1.0.0
