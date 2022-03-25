@@ -60,23 +60,14 @@ sudo xfs_growfs -d /
 df -T # ... check disk use percentage has been reduced
 ```
 
-## Step 3 - Build K8s Cluster (background job)
+## Step 3 - Build a single node K8s Cluster (background job)
 
 In a dedicated terminal, stand up a 1 node cluster using KinD (~1 minute)
 ```bash
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
 chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind
-kind create cluster --config <(cat <<EOF
-# four node (three workers) cluster config
-kind: Cluster
-apiVersion: kind.x-k8s.io/v1alpha4
-nodes:
-- role: control-plane
-- role: worker
-- role: worker
-EOF
-)
+kind create cluster
 ```
 
 ## Step 4 - Create PHP app
@@ -133,6 +124,8 @@ docker stop ${container_id_one}
 ```
 
 ## Step 6 - Load app into KinD
+
+Kubernetes uses image registries in reaction to specific images being missing from 
 
 Inspect the built image in Docker then load into KinD (no image registry required!)
 ```bash
