@@ -171,3 +171,10 @@ kubectl -n tips get pods
 kubectl -n tips delete pods --all
 kubectl -n tips get pods
 ```
+
+## Step 11 - Delete cluster
+
+Use the following command to quickly(!) terminate ALL your cluster resources.
+```bash
+kind delete cluster
+```
