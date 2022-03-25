@@ -125,6 +125,7 @@ RUN chmod a+rx index.php
 EOF
 docker build --tag demo:1.0.0 ~/environment/
 container_id_one=$(docker run --detach --rm --publish 8080:80 demo:1.0.0)
+docker ps --latest
 ```
 
 Now, in the Cloud9 toolbar, select "Preview" -> "Preview Running Application"
