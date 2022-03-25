@@ -82,7 +82,7 @@ EOF
 ## Step 4 - Create PHP app
 
 ```bash
-wget https://raw.githubusercontent.com/amcginlay/main/tips-2022-k8s-demo/image.png
+wget https://raw.githubusercontent.com/amcginlay/tips-2022-k8s-demo/main/image.png
 
 cat <<EOF >~/environment/index.php 
 <html>
