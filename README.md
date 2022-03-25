@@ -152,7 +152,7 @@ kubectl -n tips get pods
 
 ## Step 8 - Forward port for Cloud9 visibility
 
-Port forwarding provides a neat solution for ad-hoc port mapping during development.
+Port forwarding provides a neat and secure solution for ad-hoc port mapping.
 ```bash
 kubectl -n tips port-forward deployment/demo 8080:80 # ctrl+c to stop
 ```
