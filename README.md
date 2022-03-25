@@ -142,7 +142,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl*
 ```
 
-## Step 7 - Launch deployment, expose service and view objects
+## Step 8 - Launch deployment, expose service and view objects
 
 ```bash
 kubectl create namespace tips
@@ -150,7 +150,7 @@ kubectl -n tips create deployment demo --image demo:1.0.0
 kubectl -n tips get pods
 ```
 
-## Step 8 - Forward port for Cloud9 visibility
+## Step 9 - Forward port for Cloud9 visibility
 
 Port forwarding provides a neat and secure solution for ad-hoc port mapping.
 ```bash
@@ -159,11 +159,11 @@ kubectl -n tips port-forward deployment/demo 8080:80 # ctrl+c to stop
 
 Now, in the Cloud9 toolbar, select "Preview" -> "Preview Running Application"
 
-## Step 9
+## Step 10 - discuss KinD versus EKS
 
-Inspect the image shown in the browser (KinD versus EKS)
+Inspect the image shown in the browser
 
-## Step 10 - Restarts
+## Step 11 - Restarts
 
 Delete the pod to show how the deployment will resurrect the pod (see AGE)
 ```bash
