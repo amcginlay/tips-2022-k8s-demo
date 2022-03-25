@@ -2,10 +2,10 @@
 
 ## The Kubernetes Superhighway :)
 
-Ever want to try out something in Kubernetes, but some of the following are on you mind? :
-- you can't be bothered to wait 20 minutes to stand up an EKS cluster.
-- you're tired of bouncing your images off registries for no good reason.
-- you don't want your precious laptop turning into a big ball of mud.
+Ever want to try out something in Kubernetes, but ...
+- you can't be bothered to wait 20 minutes to stand up an EKS cluster?
+- you're tired of bouncing your images off registries for no good reason?
+- you don't want your precious laptop turning into a big ball of mud?
 
 If so, read on ...
 
