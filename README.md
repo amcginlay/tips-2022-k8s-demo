@@ -1,11 +1,11 @@
 # tips-2022-k8s-demo - "Kubernetes The Fast Way"
 
-Ever want to try out something in Kubernetes, but ...
-- you can't be bothered to wait 20 minutes to stand up an EKS cluster?
-- you're tired of bouncing your images off registries for no good reason?
-- you don't want your precious laptop turning into a big ball of mud?
+Have you ever wanted to try out something simple in Kubernetes, but thought ...
+- I can't be bothered to wait 20 minutes to stand up an EKS cluster?
+- Or, I'm tired of bouncing my Docker images off image registries for no discernable reason?
+- Or, I don't want your precious laptop turning into a big ball of mud?
 
-If so, read on ...
+If so, this is for you ...
 
 ## Step 1 - Create your Cloud9 instance from CloudShell (us-west-2)
 
@@ -68,6 +68,8 @@ sudo growpart /dev/nvme0n1 1
 sudo xfs_growfs -d /
 df -T # ... check disk use percentage has been reduced
 ```
+
+######################################################################
 
 ## Step 3 - Build a single node K8s Cluster (background job)
 
