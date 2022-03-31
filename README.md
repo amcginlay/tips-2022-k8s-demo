@@ -118,7 +118,7 @@ php -S localhost:8080
 
 Now, in the Cloud9 toolbar, select "Preview" -> "Preview Running Application"
 
-**Inspect/Discuss the image shown in the browser**
+**DON'T Inspect/Discuss the image shown in the browser**
 
 Stop the app so we **don't hog the port**.
 ```bash
@@ -193,6 +193,8 @@ kubectl -n tips port-forward deployment/demo 8080:80 # ctrl+c to stop
 ```
 
 Now, in the Cloud9 toolbar, select "Preview" -> "Preview Running Application"
+
+**NOW Inspect/Discuss the image shown in the browser**
 
 ## Step 10 - Restarts
 
