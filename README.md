@@ -74,6 +74,7 @@ In a dedicated terminal, stand up a 1 node cluster using KinD (~1 minute)
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
 chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind
+
 kind delete cluster && kind create cluster # rebuild cluster with this single line
 ```
 
