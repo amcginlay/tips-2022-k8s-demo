@@ -139,7 +139,6 @@ EOF
 Run the app
 ```
 docker build --tag demo:1.0.0 ~/environment/
-docker images
 docker run --detach --rm --publish 8080:80 --name tips-2022-demo demo:1.0.0
 docker ps --latest
 ```
