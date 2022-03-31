@@ -203,14 +203,23 @@ Now, in the Cloud9 toolbar, select "Preview" -> "Preview Running Application"
 
 **NOW Inspect/Discuss the image shown in the browser**
 
-## Step 10 - Restarts
+Job done, stop the port-forward.
+```bash
+ctrl+c
+```
 
-Delete the pod to show how the deployment will resurrect the pod (see AGE)
+## Step 10 - Pod resurrection (not same as container RESTARTs)
+
+Delete the pod to show how the deployment will resurrect the pod.
 ```bash
 kubectl -n tips get pods
 kubectl -n tips delete pods --all
-kubectl -n tips get pods
+kubectl -n tips get pods          # check the AGE column as compared to previously
 ```
+
+With the correct service objects in place, clients would be none the wiser!
+
+P.S. if you wish to see container RESTARTs, try `kubectl -n tips exec deployment/demo -it -- kill 1`
 
 ## Step 12 - Delete cluster
 
@@ -218,3 +227,5 @@ Use the following command to quickly(!) terminate ALL your cluster resources.
 ```bash
 kind delete cluster
 ```
+
+Demo over!
