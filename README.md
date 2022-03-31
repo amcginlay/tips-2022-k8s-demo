@@ -33,7 +33,7 @@ env_id=$(
     --query "environmentId" \
     --output text \
 )
-echo "Your Cloud9 instance is at https://${AWS_DEFAULT_REGION}.console.aws.amazon.com/cloud9/ide/${env_id}"
+echo -e "\nNow browse to your Cloud9 instance at:\nhttps://${AWS_DEFAULT_REGION}.console.aws.amazon.com/cloud9/ide/${env_id}\n"
 ```
 
 ## Step 2 - Use Cloud9 terminal to expand disk storage
