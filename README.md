@@ -155,26 +155,29 @@ Stop the app so we **don't hog the port**.
 docker stop tips-2022-demo
 ```
 
-## Step 6 - Load app into KinD
+## Step 6 - Install kubectl and confirm connectivity
 
-When images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
-With KinD we can entirely circumvent the need for image registries by pre-loading these caches.
+Flip over to the `kind` terminal window to check the cluster was successfully created
 
-Inspect the built image in Docker then load into KinD.
-```bash
-docker images demo:1.0.0
-
-kind load docker-image demo:1.0.0 # for a single-node cluster this take ~15 secs
-```
-
-## Step 7 - Install kubectl and confirm connectivity
-
+Now download the Kubernetes CLI and confirm that cluster connectivity has been established.
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl*
 
 kubectl cluster-info
+```
+
+## Step 7 - Load app into KinD
+
+When images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
+With KinD we can entirely circumvent the need for image registries by pre-loading these caches.
+
+THe following commands shows the image in the Docker cache before injecting it into the Kubernetes cluster.
+```bash
+docker images demo:1.0.0
+
+kind load docker-image demo:1.0.0 # for a single-node cluster this take ~15 secs
 ```
 
 ## Step 8 - Launch deployment, expose service and view objects
