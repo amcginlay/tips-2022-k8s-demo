@@ -157,7 +157,7 @@ docker stop tips-2022-demo
 
 ## Step 6 - Load app into KinD
 
-When images missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
+When images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
 With KinD we can entirely circumvent the need for image registries by pre-loading these caches.
 
 Inspect the built image in Docker then load into KinD.
