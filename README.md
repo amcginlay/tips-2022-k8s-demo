@@ -87,8 +87,8 @@ Meanwhile, back in your original terminal ...
 
 ## Step 4 - Create PHP app
 
+Build the homepage as follows.
 ```bash
-# the homepage as follows
 cat <<EOF >~/environment/index.php 
 <html>
 <head><title>TIPS 2022</title></head>
@@ -100,8 +100,10 @@ cat <<EOF >~/environment/index.php
 </body>
 </html>
 EOF
+```
 
-# don't forget to download the image
+Don't forget to download the referenced image
+```bash
 wget https://raw.githubusercontent.com/amcginlay/tips-2022-k8s-demo/main/image.png
 ```
 
