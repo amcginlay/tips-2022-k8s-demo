@@ -3,7 +3,7 @@
 Have you ever wanted to try out something simple in Kubernetes, but thought ...
 - I can't be bothered to wait 20 minutes to stand up an EKS cluster?
 - Or, I'm tired of bouncing my Docker images off image registries for no discernable reason?
-- Or, I don't want your precious laptop turning into a big ball of mud?
+- Or, I don't want my precious laptop turning into a big ball of mud?
 
 If so, this is for you ...
 
