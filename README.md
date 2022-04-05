@@ -136,8 +136,8 @@ RUN chmod a+rx index.php
 EOF
 ```
 
-Build the container image for the app.
-If it helps, container images are to Docker what AMIs are to EC2s.
+Build and run the container image for the app.
+If it helps, container images are to the Docker Engine what AMIs are to the EC2 service.
 ```
 docker build --tag demo:1.0.0 ~/environment/
 docker run --detach --rm --publish 8080:80 --name tips-2022-demo demo:1.0.0
