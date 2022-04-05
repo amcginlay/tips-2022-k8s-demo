@@ -73,6 +73,8 @@ df -T # ... check disk use percentage has been reduced
 
 ## Step 3 - Build a single node K8s Cluster (background job)
 
+You don't need a production-strength cluster so we're using the **KinD** tool which is purpose built for this type of task.
+
 In a dedicated terminal, stand up a 1 node cluster using KinD (~1 minute)
 ```bash
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
