@@ -163,7 +163,9 @@ docker stop tips-2022-demo
 
 ## Step 6 - Install kubectl and confirm connectivity
 
-Flip over to the `kind` terminal window to check the cluster was successfully created
+Flip over to the `kind` terminal window to check the cluster was successfully created.
+
+Close the `kind` terminal window and return to the main one.
 
 Now download the Kubernetes CLI and confirm that cluster connectivity has been established.
 ```bash
