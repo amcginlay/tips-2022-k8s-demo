@@ -127,7 +127,7 @@ Stop the app so we **don't hog the port**.
 ctrl+c
 ```
 
-## Step 5 - Build and test App in Docker
+## Step 5 - Build container image and test in Docker
 
 To run your app Kubernetes you first need an OCI compliant container image which Docker can produce and hold for us.
 
