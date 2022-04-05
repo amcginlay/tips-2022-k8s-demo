@@ -136,7 +136,8 @@ RUN chmod a+rx index.php
 EOF
 ```
 
-Run the app
+Build the container image for the app.
+If it helps, container images are to Docker what AMIs are to EC2s.
 ```
 docker build --tag demo:1.0.0 ~/environment/
 docker run --detach --rm --publish 8080:80 --name tips-2022-demo demo:1.0.0
@@ -170,7 +171,7 @@ kubectl cluster-info
 
 ## Step 7 - Load app into KinD
 
-When images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
+When container images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
 With KinD we can entirely circumvent the need for image registries by pre-loading these caches.
 
 THe following commands shows the image in the Docker cache before injecting it into the Kubernetes cluster.
