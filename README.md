@@ -178,8 +178,12 @@ kubectl cluster-info
 
 ## Step 7 - Load app into KinD
 
-When container images are missing from their local cache, each Kubernetes node will pull (i.e. download) its images from image registries.
-With KinD we can entirely circumvent the need for image registries by pre-loading these caches.
+Image registries are where you store your container images ready for distribution.
+If it helps, **a image registry is to container images what GitHub is to source code**.
+
+When a required container image is missing from its local cache, each Kubernetes node will pull (or download) that image from a registry.
+At this time you are the only consumer of your app so the use of an image registry feels a little heavy-handed.
+With KinD you can entirely circumvent the need for image registries by forcibly injecting your image into each Kubernetes node.
 
 THe following commands shows the image in the Docker cache before injecting it into the Kubernetes cluster.
 ```bash
