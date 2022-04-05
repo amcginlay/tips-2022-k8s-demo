@@ -129,7 +129,7 @@ ctrl+c
 
 ## Step 5 - Build container image for app and test in Docker
 
-To run your app inKubernetes you first need an OCI compliant container image which Docker can produce and hold for us.
+To run your app in Kubernetes you first need an OCI compliant container image which Docker can produce and hold for us.
 
 If it helps, **container images are to the Docker Runtime what AMIs are to the EC2 service.**
 
