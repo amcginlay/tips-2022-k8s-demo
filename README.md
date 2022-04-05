@@ -73,7 +73,7 @@ df -T # ... check disk use percentage has been reduced
 
 ## Step 3 - Build a single node K8s Cluster (background job)
 
-As mentioned, you don't need a production-strength cluster for this task so we're using the **KinD** tool which, like Minikube and other lightweight distributions, is purpose built for quickly standing-up disposable sandbox environments.
+You don't need a production-strength cluster for this task so we're using the **KinD** tool which, like Minikube and other lightweight distributions, is purpose built for quickly standing-up disposable sandbox environments.
 
 In a dedicated terminal, stand up a 1 node cluster using KinD (~1 minute)
 ```bash
